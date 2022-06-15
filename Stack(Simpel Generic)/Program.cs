@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Stack_Simpel_Generic_
 {
@@ -38,11 +39,15 @@ namespace Stack_Simpel_Generic_
                 foreach (string order in orders2)
                 {
                     Console.WriteLine(order);
+
                 }
 
                 //Clear oreder2 contents
                 Console.WriteLine("\nOrders2.clear()");
-                orders.Clear();
+                orders2.Clear();
+
+                //Get the number of elements conatined in the stack after clearing
+                Console.WriteLine("\nCount orders2 batch {0}", orders2.Count);
 
                 Console.ReadKey();
             }
